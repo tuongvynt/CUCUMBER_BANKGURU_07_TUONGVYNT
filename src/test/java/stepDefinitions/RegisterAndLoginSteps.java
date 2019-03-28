@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
@@ -36,7 +37,7 @@ public class RegisterAndLoginSteps {
 
 	@Given("^I input to email textbox with data ​\"([^\"]*)\"$")
 	public void iInputToEmailTextboxWithData​(String emailValue)  {
-		email = emailValue + randomNumber() + "@mailinator.com";
+		email = emailValue + randomNumber() + "@gmail.com";
 		driver.findElement(By.xpath("//input[@name='emailid']")).sendKeys(email);
 	}
 

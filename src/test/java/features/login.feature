@@ -8,7 +8,7 @@ Scenario: Register and Login to application
   Given I open application 
   And I get Login page Url 
   And I click to here link
-  And I input to email textbox with data ​"selenium_07_nttvy" 
+  And I input to email textbox with data ​"onl_07_nttvy_" 
   And I click to Submit button at Register page 
   Then I get UserID infor 
   And I get Password infor 
